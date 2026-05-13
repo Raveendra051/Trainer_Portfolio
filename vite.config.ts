@@ -25,6 +25,9 @@ export default defineConfig(({mode}) => {
   };
 });
 export default defineConfig({
-  base: '/Trainer_Portfolio/', // This must match your repo name exactly
+  base: '/Trainer_Portfolio/',
   plugins: [react()],
+  build: {
+    outDir: 'docs', // This tells Vite to put the website files in the docs folder
+  },
 })
