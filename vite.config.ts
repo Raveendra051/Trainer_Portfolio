@@ -24,3 +24,7 @@ export default defineConfig(({mode}) => {
     },
   };
 });
+export default defineConfig({
+  base: '/Trainer_Portfolio/', // This must match your repo name exactly
+  plugins: [react()],
+})
